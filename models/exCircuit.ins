@@ -1,0 +1,41 @@
+(* Exemple de circuit *)
+
+(*********************************)
+structure
+(*********************************)
+
+rennes:
+	-> (TER1) lemans;
+	-> (TGV1) paris;
+	-> (TGV2) massy;
+
+lemans:
+	-> (TER2) paris;
+	-> (TGV3) massy;
+
+massy:
+	-> (RER1) bagneux;
+
+paris:
+	-> (RER2) bagneux;
+	-> (Taxi) lsv;
+
+bagneux:
+	-> (Walk) lsv;
+
+lsv:
+	-> (38) lemans;
+
+(*********************************)
+costs
+(*********************************)
+
+& TER1 = 80
+& TER2 = 180
+& TGV1 = 125
+& TGV2 = 130
+& TGV3 = 55
+& RER1 = 25
+& RER2 = 30
+& Taxi = 45
+& Walk = 10

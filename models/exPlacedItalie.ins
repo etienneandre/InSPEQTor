@@ -1,0 +1,40 @@
+(* Exemple du livre "Initiation à l'algorithmique" p.551 *)
+
+(*********************************)
+structure
+(*********************************)
+
+chezMoi:
+	-> (velib1) corvisart;
+	-> (velib2) denfert;
+	-> (aPied) metroPlacedItalie;
+	-> (velo) LSV;
+
+metroPlacedItalie:
+	-> (metro1) corvisart;
+
+corvisart:
+	-> (metro2) denfert;
+
+denfert:
+	-> (rer) bagneux;
+
+bagneux:
+	-> (aPiedCachan) LSV;
+
+LSV:
+
+
+(*********************************)
+costs
+(*********************************)
+
+& velib1 = 5
+& velib2 = 9
+& aPied = 5
+& velo = 25
+& metro1 = 2
+& metro2 = 5
+& rer = 12
+& aPiedCachan = 7
+
